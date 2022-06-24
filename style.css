@@ -1,0 +1,521 @@
+:root{
+ --clr-primary: aqua;
+ --clr-accent: aquamarine;
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-padding: 8%;
+}
+body{
+    background: transparent;
+}
+img{
+    height: 300px;
+    clip-path: polygon(0, 0, 100%, 0, 70%, 100%, 0, 100%);
+}
+nav ul li:last-child{
+ display: none;
+}
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background:rgb(60, 14, 227);
+    height: 80px;
+    align-items: center;
+    padding-left: 50px;
+    color: black;
+    font-weight: bold;
+    /* margin-bottom: 50px; */
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 999;
+}
+ul{
+    list-style-type: none;
+}
+nav ul > li a{
+    font-weight: bolder;
+    transition: transform 500ms 0ms ease;
+    cursor: pointer;
+    color: black;
+    font-size: 1.4rem;
+}
+nav ul > li a:hover{
+  transform: scale(1.1);
+  background: white;
+  border: none;
+  outline:none;
+  padding: 5px;
+  color: blue;
+  border-radius: 5%;
+}
+li > a{
+    text-decoration: none;
+}
+nav + .info{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ margin-top: 100px;
+ margin-bottom: 30px;
+ background: rgba(118, 11, 82, 0.171);
+ position: relative;
+ padding-top: 50px;
+ padding-bottom: 50px;
+}
+.info img{
+    margin-right: 15px;
+    clip-path: polygon(100% 0%, 90% 100%, 0% 100%, 0% 0%);
+    z-index: 2;
+}
+h1 > b{
+    font-weight: bolder;
+    color:midnightblue;
+}
+.info > b{
+    align-self: flex-end;
+    position: absolute;
+    bottom: 5%;
+    display: none;
+    right: 10%;
+}
+.info h4{
+    align-self: flex-end;
+    margin: -15px 20px 0px -400px;
+    font-size: 2em;
+    color:midnightblue;
+    text-transform: capitalize;
+}
+h1 > div{
+    background-color: darkblue;
+    width: 200%;
+    margin-top: 30px;
+    bottom: 20%;
+    text-align: left;
+    transform: translateX(0);
+    color:salmon;
+    z-index: -1;
+    /* position: absolute; */
+    padding-right: 30px;
+}
+.info h1:not(.color){
+    margin-bottom: 30px;
+}
+.about-me{
+    background-color: rgb(28, 3, 140);
+    background-image: url(/images/1644665380801.jpg);
+    background-size:cover;
+    background-blend-mode:multiply;
+    font-size: 1.7rem;
+    color: white;
+    height: auto;
+    padding: 5rem 0 5rem 1.5rem;
+    background-position: center center;
+}
+.about-me h2{
+    margin-bottom: 2rem;
+    text-align: center;
+    /* color: blue; */
+    font-weight: bolder;
+    font-size: 3em;
+}
+.about-me .images{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ margin-top: 30px;
+ /* background-color: blueviolet; */
+ padding: 100px;
+}
+.about-me h2 + p{
+    margin-bottom: 200px;
+    text-transform: none;
+    /* color: rgb(6, 35, 6); */
+    /* text-shadow: 1px 1px 2px rgba(93, 206, 85, 0.687); */
+}
+.about-me h3{
+    text-align: center;
+    text-decoration:underline;
+    /* text-shadow: 2px 2px 3px white; */
+    /* color:rgb(92, 42, 5); */
+    margin: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.about{
+    margin-bottom: 20px;
+    text-transform: none;
+    text-shadow: 1px 1px 2px rgb(219, 216, 184);
+}
+.about-me h5 + h5{
+    text-align: center;
+    background-color: rgb(8, 170, 170);
+    width:fit-content;
+    padding: 20px;
+    margin-top: 30px;
+}
+.work{
+    background-color:rgba(9, 179, 9, 0.704);
+    background-image: url(/images/mbp15touch_space_gallery2_201807_GEO_US.0\ \(1\).webp);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode:multiply;
+    padding-top: 2rem;
+    color: white;
+    font-size: 1.4em;
+}
+.work a{
+    text-decoration: none;
+}
+.work h3{
+    text-align: center;
+    color:whitesmoke;
+    margin-bottom: 100px;
+    font-size: 4em;
+    font-weight: bold;
+    /* position: relative; */
+    align-items: center;
+}
+.work h3::after{
+ content: '';
+ height: 2px;
+ background-color: var(--clr-primary);
+ width: 15%;
+ display: block;
+ margin: 0.15em auto 0.5em;
+ opacity: .25;
+}
+.work > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* max-width: 100px; */
+    /* margin: 0 auto; */
+}
+.work > div > h4{
+    margin: 0 20px 0 20px;
+}
+.work > div h4:first-child::before{
+    content: 'web design';
+    display: block;
+    font-size: 2em;
+    margin-top: -20px;
+    text-align: center;
+}
+.work > div h4:nth-child(2)::before{
+    content: 'website hosting';
+    display: block;
+    font-size: 2em;
+    margin-top: -20px;
+    text-align: center;
+}
+.work > div h4:last-child::before{
+    content: 'development';
+    display: block;
+    font-size: 2em;
+    margin-top: -20px;
+    text-align: center;
+}
+.hire-me{
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.hire-me b{
+    font-size: 1.4em;
+    color:brown;
+}
+.hire-me b::before{
+    content: attr(data-title);
+    background-color: brown;
+    font-weight: bolder;
+    font-size: 3rem;
+    width: 200%;
+    color: black;
+    border-radius: 5%;
+    display: block;
+    text-transform: uppercase;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    text-align: left;
+    padding: 10px 0px 10px 50px;
+}
+.hire-me > img{
+    margin-left: 50px;
+    /* clip-path:circle(40%); */
+}
+.hire-me b > a{
+    text-decoration: none;
+}
+.my-skills{
+    background:rgb(31, 5, 101);
+    padding: 5rem;
+    background-image: url(/images/images\ \(3\).jpeg);
+    font-size: 2rem;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    background-blend-mode:multiply;
+    padding-bottom: 10rem;
+    margin-bottom: 50px;
+    color: white;
+}
+.my-skills > h1{
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    margin-bottom: 30px;
+}
+.my-skills > span{
+ text-align: left;
+ text-shadow: 2px 2px 4px white;
+ margin-bottom: 30px;
+}
+.my-skills span + h5{
+    margin: 20px auto 20px;
+}
+.my-skills ul > li{
+    margin: 5px auto 10px;
+    margin-right: 50px;
+}
+.my-skills ul > li::after{
+    content:'';
+    height: 10px;
+    background-color: rgb(34, 9, 146);
+    width: 90%;
+    display: inline-grid;
+    margin-left: 50px;
+}
+.talk-to-me{
+    background: rgb(162, 80, 80);
+    padding: 5rem;
+    height: auto;
+    margin-top: 50px;
+    background-image: url(/images/images\ \(4\).jpeg);
+    background-blend-mode: multiply;
+    color: white;
+    background-size: cover;
+}
+.talk-to-me > h1{
+    text-align: center;
+    font-weight: bolder;
+    background:rgb(8, 170, 170);
+    padding: 10px;
+    margin-bottom: 50px;
+    width: 90%;
+}
+.talk-to-me h2{
+    font-weight: bolder;
+    font-size: 2em;
+    margin: 2em auto  30px;
+}
+.talk-to-me b{
+    margin-top: 10px;
+    font-size: 2em;
+    font-weight: bolder;
+}
+.fa{
+    font-size: 2em;
+    color: white;
+}
+.my-images{
+    height: auto;
+    background: rgb(137, 43, 2);
+    background-image: url(/images/download\ \(4\).png);
+    background-size: cover;
+    padding-top: 50px;;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+.my-images > .images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 1px;
+}
+.my-images .images{
+    overflow: hidden;
+}
+.my-images h1{
+    text-align: center;
+    color: rgb(32, 8, 87);
+    margin-bottom:50px; 
+    font-size: 4em;
+}
+.my-images h5{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+.portfolio__item > img{
+    transition: transform 400ms ease-in-out;
+    height: 200px;
+    width: 330px;
+}
+.portfolio__item{
+    overflow: hidden;
+    background: var(--clr-accent);
+}
+.portfolio__item > img:hover,
+.portfolio__item:focus > img
+{
+  transform: scale(1.3);
+  opacity: .75;
+}
+@media (max-width: 800px) {
+    *{
+        word-wrap: break-word;
+    }
+    .work{
+        height: auto;
+    }
+    div{
+        height: auto;
+        width:auto;
+    }
+   .work > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 100px; */
+    /* margin: 0 auto; */
+    column-gap: 100px;
+   }
+   .work > div > h4{
+    margin: 30px 0 30px 0;
+  }
+   nav > ul{
+    background-color: brown;
+   }
+   nav ul li{
+    display: none;
+   }
+   nav ul li:last-child{
+    display: flex;
+    margin-left: 70%;
+    font-size: 2em;
+   }
+   nav + .info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    /* background: rgba(118, 11, 82, 0.171); */
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 2rem;
+    word-wrap: break-word;
+   }
+   .info h4{
+    align-self: unset;
+    margin: unset;
+    margin-bottom: 10px;
+    font-size: 2em;
+    color:midnightblue;
+    text-transform: unset;
+  }
+  h1 > div{
+    background-color: darkblue;
+    width: 100%;
+    margin-top: 30px;
+    bottom: 20%;
+    text-align: left;
+    transform: translateX(0);
+    color:salmon;
+    z-index: 0;
+    /* position: absolute; */
+    padding-right: 30px;
+ }
+ .hire-me{
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ .hire-me b::before{
+    content: attr(data-title);
+    background-color: brown;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    width: 50%;
+    margin-left: 20%;
+    color: black;
+    border-radius: 1%;
+    display: block;
+    text-transform: uppercase;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 10px 0px 10px 50px;
+ }
+ .hire-me b{
+    margin-bottom: 20px;
+ }
+ .work h3{
+    font-size: 3em;
+ }
+ .talk-to-me{
+    padding: 5rem 0 5rem;
+ }
+ .talk-to-me h1{
+    text-align: center;
+    padding: 0;
+    margin-left: 2%;
+ }
+ .hire-me img{
+    margin-bottom: 20px;
+ }
+ .my-skills{
+    padding: 5rem 0 5rem;
+ }
+ .my-skills > h1{
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(239, 227, 227);
+    margin-bottom: 30px;
+    font-size: 1.1em;
+ }
+ div > div{
+    padding-left:0;
+ }
+.my-images > .images{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    row-gap: 1px;
+}
+}
+.menu{
+    background-color: black;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    visibility: hidden;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 30px;
+    text-align: center;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 3em;
+    color: white;
+}
+.toggle{
+    visibility: visible;
+}

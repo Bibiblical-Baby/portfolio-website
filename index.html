@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="introduction">
+            <section class="menu">
+              <a href="#about-me" data-menu>about me</a>
+              <hr>
+              <a href="#what-i-do" data-menu="">what i do</a>
+              <hr>
+              <a href="#hire-me" data-menu="">hire me</a>
+              <hr>
+              <a href="#my-images" data-menu="">my Work</a>
+              <hr>
+              <a href="#talk-to-me" data-menu="">talk to me</a>
+              <hr>
+              <a href="#my-skills" data-menu="">my skills</a>
+              <i class="fa fa-times"></i>
+            </section>
+            <nav>
+                <ul id="menu-list">
+                    <li><a href="#info">home</a></li>
+                    <li><a href="#about-me">about me</a></li>
+                    <li><a href="#what-i-do">what I do</a></li>
+                    <li><a href="#hire-me">hire me</a></li>
+                    <li><a href="#my-images">my Work</a></li>
+                    <li><a href="#talk-to-me">talk to me</a></li>
+                    <li><a href="#my-skills">my skills</a></li>
+                    <li id="toggle-menu"><div class="fas fa-navicon"></div></li>
+                </ul>
+            </nav>
+            <div class="info" id="info">
+                <h1 class="from-left">Hi, I am <br/> <b>The Bibilical Baby <br> 18 years of age</b><br/> <div class="color">a front-end web developer</div></h1>
+                <b class="from-left">motto: hire me, get your work done in seconds</b>
+                <!-- <h4 class="from-left">I develop web apps proffessionaly</h4> -->
+                <img src="images\chief (2).jpg" class="from-right">
+            </div>
+            <div class="hidden-text">
+                <h2><div class="fas fa-envelope"></div></h2>
+                <h3>hire me and get your job <br> done in seconds</h3>
+            </div>
+            <div class="about-me" id="about-me">
+                <h2 class="column">who I am</h2>
+                <p class="column">hey there and thank you for visiting my page,, my name is the bibilical baby,, am 18 years of age,,
+                    am a front end web developer who just got into the industry recently, i have learned several aspects of the industry
+                </p>
+                <h3 class="column">my hobby and career</h3>
+                <h5 class="column">I love doing web development as both hobby and my part time job, I learned web development and i have got several skills and am sure that i can help you out</h5>
+            </div>
+        </div>
+        <div class="work" id="what-i-do">
+            <h3>what I do</h3>
+            <div>
+                <h4 class="column">Am a front end web developer, my work is designing user interfaces of websites</h4>
+                <h4 class="column">I major in the front end sector of any websites, some of the websites i make are school websites such as
+                    universities, personal websites such as portfolios, business websites and also web apps</h4>
+                <h4 class="column">If you may want me to work for you in any of the above mentioned sectors, then <a href="#hire-me">hire me</a>,
+                    i
+                    will give you quality work which you will appreciate</h4>
+            </div>
+        </div>
+        <div class="hire-me" id="hire-me">
+            <b data-title="hire me" class="from-left">you can hire me to do your work any time. <br> my contacts are given <a href="#contacts">below</a></b>
+            <img src="images/1644665380801.jpg" class="from-right">
+        </div>
+        <div class="my-skills" id="my-skills">
+            <h3 class="column">My skills and experience</h3>
+            <span class="column">I am highly experienced in front end web development, i have a strong understanding of languages used in front-end
+                starting from mark up languages such as HTML and style with CSS then programming languages such as javascript and then frameworks such as vue.js, react.js, jquery and a little bit of node.js in the back-end
+            </span>
+            <h5 class="column">below estimations illustrates my skills in different sectors:</h5>
+            <ul>
+                <li class="column">HTML:</li>
+                <li class="column">CSS:</li>
+                <li class="column">javascript:</li>
+                <li class="column">vue.js:</li>
+                <li class="column">react-js:</li>
+                <li class="column">node.js:</li>
+            </ul>
+        </div>
+        <div class="my-images" id="my-images">
+            <h1>my work</h1>
+            <h5 class="column">Below are some images describing my work flow</h5>
+            <div class="images">
+                <a href="#my-skills" class="portfolio__item from-left">
+                    <img src="images\download (7).png">
+                </a>
+                <a href="#my-skills" class="portfolio__item from-right">
+                    <img src="images\download (3).png">
+                </a>
+                <a href="#my-skills" class="portfolio__item from-left">
+                    <img src="images\download (1).png">
+                </a>
+                <a href="#my-skills" class="portfolio__item from-right">
+                    <img src="images\images (2).jpeg">
+                </a>
+                <a href="#my-skills" class="portfolio__item from-left">
+                    <img src="images\download (4).png">
+                </a>
+                <a href="#my-skills" class="portfolio__item from-right">
+                    <img src="images\images.png">
+                </a>
+            </div>
+        </div>
+        <div class="talk-to-me" id="talk-to-me">
+            <h1 class="column">talk to me</h1>
+            <h2 class="column">you can always reach me to get your work done, below are some of my handles in social media platforms,fell free to talk to me whenever you need my services</h2>
+        </div>
+        <div class="contacts" id="contacts">
+            <i class="fab fa-facebook" title="facebook"></i>
+            <i class="fab fa-twitter" title="twitter"></i>
+            <i class="fab fa-github" title="github"></i>
+            <i class="fab fa-instagram" title="instagram"></i>
+            <h6>@BibilicalBaby. all rights reserved</h6>
+        </div>
+    </div>
+</body>
+</html>

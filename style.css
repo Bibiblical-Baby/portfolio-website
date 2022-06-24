@@ -109,7 +109,7 @@ h1 > div{
 }
 .about-me{
     background-color: rgb(28, 3, 140);
-    background-image: url(/images/1644665380801.jpg);
+    background-image: url("1644665380801.jpg");
     background-size:cover;
     background-blend-mode:multiply;
     font-size: 1.7rem;
@@ -162,7 +162,7 @@ h1 > div{
 }
 .work{
     background-color:rgba(9, 179, 9, 0.704);
-    background-image: url(/images/mbp15touch_space_gallery2_201807_GEO_US.0\ \(1\).webp);
+    background-image: url(mbp15touch_space_gallery2_201807_GEO_US.0\ \(1\).webp);
     height: 100vh;
     background-size: cover;
     background-position: center center;
@@ -260,7 +260,7 @@ h1 > div{
 .my-skills{
     background:rgb(31, 5, 101);
     padding: 5rem;
-    background-image: url(/images/images\ \(3\).jpeg);
+    background-image: url(images\ \(3\).jpeg);
     font-size: 2rem;
     background-size: cover;
     background-position: center;
@@ -301,7 +301,7 @@ h1 > div{
     padding: 5rem;
     height: auto;
     margin-top: 50px;
-    background-image: url(/images/images\ \(4\).jpeg);
+    background-image: url(images\ \(4\).jpeg);
     background-blend-mode: multiply;
     color: white;
     background-size: cover;
@@ -331,7 +331,7 @@ h1 > div{
 .my-images{
     height: auto;
     background: rgb(137, 43, 2);
-    background-image: url(/images/download\ \(4\).png);
+    background-image: url(download\ \(4\).png);
     background-size: cover;
     padding-top: 50px;;
     background-position: center;
